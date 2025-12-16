@@ -14,8 +14,15 @@ export default function Home()
                 Guess the Risk of Rain 2 item based on its attributes.
             </p>
 
-            <button className="px-8 py-5 rounded-lg bg-indigo-500 hover:bg-indigo-600 transition">
+            <button className="px-8 py-5 rounded-lg bg-indigo-900 hover:bg-indigo-700 transition">
                 Start Game
+            </button>
+
+            <button className="fixed bottom-6 right-6 px-3 py-3 bg-indigo-900 rounded">
+                🎵
+            </button>
+            <button className="fixed bottom-20 right-6 px-3 py-3 bg-red-500 rounded">
+                ☕
             </button>
         </main>
     );
