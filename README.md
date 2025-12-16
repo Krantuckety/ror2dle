@@ -9,3 +9,8 @@ They are used here under fair use for fan content. No copyright infringement is 
 
 Only the source code in this repository is licensed under the MIT License. 
 The game assets are NOT licensed for reuse, redistribution, or commercial use.
+
+## Credits
+- **Bombardier Font** by **6ATBA**
+  Source: https://fontesk.com/bombardier-font/
+  License: Free for commercial use (SIL Open Font License 1.1)
