@@ -4,9 +4,11 @@ export default function Home()
 {
     return (
         <main className="min-h-screen flex flex-col items-center bg-slate-900 text-slate-100 font-bombardier">
-            <h1 className="text-8xl text-center">
-                ror2dle
-            </h1>
+            <img
+                src="/public/ror2dle_logo.png"
+                alt="ror2dle logo"
+                className="w-100 max-w-full mt-8 mb-6"
+            />
 
             <p className="text-2xl text-slate-300 mb-8 text-center max-w-md">
                 Guess the Risk of Rain 2 item based on its attributes.
