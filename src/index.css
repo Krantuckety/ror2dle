@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+html, 
+body, 
+#root 
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: 'Bombardier', sans-serif;
+    background-image: url('./backgrounds/returnsBackground.jpg') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 @font-face 
 {
     font-family:'Bombardier';
@@ -9,4 +27,64 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+
+@layer components {
+  .ror2-button 
+  {
+    @apply relative w-12 h-12 py-3 tracking-wider text-slate-100;
+    font-family: 'Bombardier', sans-serif;
+
+    background: #425262;
+    outline: 2px solid #536678;
+    border: 1px solid #939499;
+    outline-offset: -3px;
+  }
+
+  /* Top-left triangle */
+  .ror2-button::before 
+  {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    width: 0;
+    height: 0;
+
+    border-top: 5px solid #536678;
+    border-right: 5px solid transparent;
+  }
+
+  /* Bottom-right triangle */
+  .ror2-button::after 
+  {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+
+    width: 0;
+    height: 0;
+
+    border-bottom: 5px solid #536678;
+    border-left: 5px solid transparent;
+  }
+
+  .ror2-button:hover 
+  {
+    background: #B3B680;
+    outline: 1px solid #DCDE9B;
+    box-shadow: 0px 0px 0 3px #FFFFFF;
+  }
+
+  .ror2-button:hover::before 
+  {
+    border-top-color: #DCDE9B;
+  }
+
+  .ror2-button:hover::after 
+  {
+    border-bottom-color: #DCDE9B;
+  }
 }
